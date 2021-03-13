@@ -1,0 +1,3 @@
+rootProject.name = 'PokemonCrud'
+
+includeFlat 'JPAPokemon'
