@@ -7,7 +7,10 @@ import javax.persistence.Id;
 public class Pokemon {
 	@Id
 	private int id;
+	
 	private String name;
+	
+	private String description;
 	
 	
 	@Override
@@ -34,10 +37,25 @@ public class Pokemon {
 	public void setName(String name) {
 		this.name = name;
 	}
+	
+	public String getDescription() {
+		return description;
+	}
+
+
+	public void setDescription(String description) {
+		this.description = description;
+	}
 
 
 	public Pokemon() {
 		super();
+	}
+	
+	public Pokemon(String name, String description) {
+		super();
+		this.name = name;
+		this.description = description;
 	}
 	
 }
